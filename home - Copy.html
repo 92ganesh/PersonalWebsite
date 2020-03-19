@@ -224,7 +224,7 @@
 		<div class="row">
 			<div class="col-md-1 order-2 order-md-1  bg-dark ">
 				<center>
-					<a href="#" class="fa fa-google" onclick="putjson()"></a>
+					<a href="#" class="fa fa-google"></a>
 					<a href="https://www.linkedin.com/in/ganesh-patra/" target="_blank" class="fa fa-linkedin"></a>
 					<a href="https://www.youtube.com/channel/UCqWcLKvibUdE08OgHc07CVA" target="_blank" class="fa fa-youtube"></a>
 					<a href="https://www.github.com/92ganesh" target="_blank" class="fa fa-github"></a>
@@ -232,45 +232,20 @@
 			</div>
 			<div class="col-md-11 order-1 order-md-2">
 				<div class="row">
-					
-<div id="journeyLine" class="timeline">
-	<div class="container left">
-	  <div class="content">
-		<h3>2014</h3>
-		<p>completed SSC with 92% and 2nd rank in school</p>
-	  </div>
-	</div>
-	<div class="container right">
-	  <div class="content">
-		<h3>2016</h3>
-		<p>completed HSC with 92% and 1nd rank in college</p>
-	  </div>
-	</div>
-	<div class="container left">
-	  <div class="content">
-		<h2>2015</h2>
-		<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-	  </div>
-	</div>
-	<div class="container right">
-	  <div class="content">
-		<h2>2012</h2>
-		<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-	  </div>
-	</div>
-	<div class="container left">
-	  <div class="content">
-		<h2>2011</h2>
-		<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-	  </div>
-	</div>
-	<div class="container right">
-	  <div class="content">
-		<h2>2007</h2>
-		<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-	  </div>
-	</div>
-  </div>
+					<div id="timelineId" class="timeline">
+						<div class="container left">
+							<div class="content">
+							  <h3>2014</h3>
+							  <p>completed SSC with 92% and 2nd rank in school</p>
+							</div>
+						  </div>
+						  <div class="container right">
+							<div class="content">
+							  <h3>2016</h3>
+							  <p>completed HSC with 92% and 1nd rank in college</p>
+							</div>
+						  </div>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -284,27 +259,16 @@
 	  <script>
 		window.onload = function() {
 			 //reloadPage();
+			var jsonString = '[{"year" : 1997,"detail": "born"},{"year" : 1998,"detail": "1 year"},{"year" : 1999,"detail": "2 yrs"}]';
+			addJourneyFromJson(jsonString);
+
 		};
 
 		function re(){
 			location.reload(true);
 		}
 
-		function putjson(){
-			var xmlhttp = new XMLHttpRequest();
-			xmlhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				var myArr = JSON.parse(this.responseText);
-				console.log(myArr);
-				document.getElementById("journeyLine").innerHTML +=
-			 '<div class="container left"><div class="content"><h2>2020</h2><p>ganLom, vim ea maz</p></div></div>';
-			}
-			};
-			xmlhttp.open("GET", "https://www.w3schools.com/js/json_demo_array.txt", true);
-			xmlhttp.send(); 
-			
 		
-		}
 
 
 		function reloadPage(){

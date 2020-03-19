@@ -255,16 +255,7 @@
 			var jsonString = '[{"year" : 1997,"detail": "born"},{"year" : 1998,"detail": "1 year"},{"year" : 1999,"detail": "2 yrs"}'+
 			',{"year" : 2000,"detail": "born"},{"year" : 2001,"detail": "1 year"},{"year" : 2002,"detail": "2 yrs"}]';
 			
-			xmlhttp = new XMLHttpRequest();
-			xmlhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
-					console.log(this.responseText);
-					addJourneyFromJson(this.responseText);
-				}
-			};
-			xmlhttp.open("GET", "myjourney.json", true);
-			xmlhttp.send();
-			
+			addJourneyFromJson(jsonString);
 		};
 
 		function re(){
