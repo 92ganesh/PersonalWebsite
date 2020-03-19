@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h2>Make a table based on JSON data.</h2>
+<h2>Make a table based on JSON data 1.</h2>
 
 <p id="demo"></p>
 
@@ -13,9 +13,10 @@ dbParam = JSON.stringify(obj);
 xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    myObj = JSON.parse(this.responseText);
+	  console.log(this.responseText);
+    	  myObj = JSON.parse(this.responseText);
 	
-	console.log(this.responseText);
+	
 	console.log(myObj);
 	
     document.getElementById("demo").innerHTML = myObj;
