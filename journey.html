@@ -258,7 +258,6 @@
 			xmlhttp = new XMLHttpRequest();
 			xmlhttp.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status == 200) {
-					console.log(this.responseText);
 					addJourneyFromJson(this.responseText);
 				}
 			};
@@ -286,7 +285,6 @@
 							'<h3>'+myObj[i].year+'</h3>'+
 							'<p>'+myObj[i].detail+'</p></div></div>';
 				 
-				console.log(htmlStr);
 				displayOnLeft = !displayOnLeft;
 			}
 			document.getElementById("timelineId").innerHTML= htmlStr + document.getElementById("timelineId").innerHTML;

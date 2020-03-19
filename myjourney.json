@@ -1,23 +1,35 @@
 [
 	{
-		"year" : 1997,
-		"detail": "born"
+		"year" : 2014,
+		"detail": "SSC with 92% and 2nd in school"
 	},
 	{
-		"year" : 1998,
-		"detail": "1 year"
+		"year" : 2016,
+		"detail": "HSC with 92% and 1st in college"
 	},
 	{
-		"year" : 1999,
-		"detail": "2 yrs"
+		"year" : 2017,
+		"detail": "Internship in language recognition at KJSCE"
 	},
 	{
-		"year" : 2020,
-		"detail": "1 year"
+		"year" : 2018,
+		"detail": "Internship in Computer Vision and ML at AItoe Labs"
 	},
 	{
-		"year" : 2021,
-		"detail": "2 yrs"
+		"year" : 2019,
+		"detail": "Qualified for semi-finals in TechGig Code gladiator 2019 (World’s largest coding contest)"
+	},
+	{
+		"year" : 2019,
+		"detail": "4th Rank in Codewars 2019 (inter-departmental coding challenge of KJSCE)"
+	},
+	{
+		"year" : 2019,
+		"detail": "Internship in Android development at KJSCE"
+	},
+	{
+		"year" : 2019,
+		"detail": "Received badge of 5 star rated coder on Codechef (2019)"
 	}
 
 ]
