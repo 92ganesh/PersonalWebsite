@@ -21,9 +21,8 @@ xmlhttp.onreadystatechange = function() {
     document.getElementById("demo").innerHTML = myObj;
   }
 };
-xmlhttp.open("POST", "myjourney.json", true);
-xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlhttp.send("x=" + dbParam);
+xmlhttp.open("GET", "myjourney.json", true);
+xmlhttp.send();
 </script>
 
 </body>
