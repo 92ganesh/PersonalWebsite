@@ -100,7 +100,26 @@
 		<div class="row">
 			<div class="col-md-1 order-2 order-md-1  bg-dark ">
 				<center>
-					<a href="#" class="fa fa-google"></a>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Email</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  92ganeshpatra@gmail.com
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+					<a href="#" class="fa fa-google" data-toggle="modal" data-target="#exampleModal"></a>
 					<a href="https://www.linkedin.com/in/ganesh-patra/" target="_blank" class="fa fa-linkedin"></a>
 					<a href="https://www.youtube.com/channel/UCqWcLKvibUdE08OgHc07CVA" target="_blank" class="fa fa-youtube"></a>
 					<a href="https://www.github.com/92ganesh" target="_blank" class="fa fa-github"></a>
@@ -149,7 +168,7 @@
 			project = JSON.parse(jsonString);
 			var htmlStr = "";
 			for(var i=0;i<project.length;i++){
-				htmlStr+= '<div class="card" style="width: 23rem;margin:5px">'
+				htmlStr+= '<div class="card" style="width: 23rem;margin:5px margin-top:20px; border:2px solid gold;">'
 						+'<img class="card-img-top" src="projectImages/'+project[i].image+'" alt="Card image cap"  height="250" width="440">'
 						+'<div class="card-body">'
 						+'<h5 class="card-title">'+project[i].title+'</h5>'

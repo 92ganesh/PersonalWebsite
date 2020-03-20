@@ -2,20 +2,20 @@
 	
 	{
 		"title" : "This website",
-		"detail": "Website to display my profile",
+		"detail": "Website to display my profile. You are literally using it right now.",
 		"image" : "profile.jpg",
 		"github": "https://github.com/92ganesh/PersonalWebsite"
 	},
 	{
 		"title" : "Language Recogniton",
-		"detail": "Python program to recognize handwritten scripts and to which language they belong. Currently three languages are supported i.e English(International), Hindi(National), Odia(Regional) and character set of script is limited to digits only. ",
+		"detail": "Python program to recognize handwritten scripts and to which language they belong.",
 		"image" : "languageRecognition.jpg",
 		"github": "https://github.com/92ganesh/Language-Recognition",
 		"demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"
 	},
 	{
 		"title" : "Recruit.me",
-		"detail": "Web app to improve resume screening process. Applicants for interview can provide their user handles of various online platforms like GitHub, LinkedIn, codechef, hackerrank etc. All the relevant info of their accounts will be presented to interviewer in intuitive manner",
+		"detail": "Web app to improve resume screening process. Using web scraping relevant info of interviewee's online accounts like GitHub, LinkedIn, codechef, hackerrank etc. will be presented to the interviewer in intuitive manner",
 		"image" : "recruitMe.gif",
 		"github": "https://github.com/92ganesh/Recruit.me",
 		"demo"	: "https://www.youtube.com/watch?v=8xoCqm1-tL4&t=112s"
@@ -35,7 +35,7 @@
 	},
 	{
 		"title" : "Loan Risk Predictor",
-		"detail": "Web app which uses linear regression to determine whether a person will be able to pay his loan or not.Results are stated in probability (0 to 100%) of returning the loan.",
+		"detail": "Web app which uses linear regression to determine whether a person will be able to pay his loan or not. Results are stated in probability (0 to 100%) of returning the loan.",
 		"image" : "LoanRiskPredictor.png",
 		"github": "https://github.com/92ganesh/LoanRiskPredictor",
 		"demo"	: "https://92ganesh.github.io/LoanRiskPredictor/"
