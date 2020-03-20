@@ -17,14 +17,14 @@
 		}
 
 		.fa {
-		padding:10px;
-		font-size: 30px;
-		width: 50px;
-		height: 50px;
-		text-align:center;
-		text-decoration: none;
-		margin: 5px 2px;
-		border-radius: 50%;
+			padding:10px;
+			font-size: 30px;
+			width: 50px;
+			height: 50px;
+			text-align:center;
+			text-decoration: none;
+			margin: 5px 2px;
+			border-radius: 50%;
 		}
 
 		.fa:hover {
@@ -49,6 +49,16 @@
 		.fa-github {
 		background: #000000;
 		color: white;
+		}
+
+		.left-margin{
+			margin-left: 0px;
+		}
+
+		@media screen and (max-width: 600px) {
+			.left-margin{
+				margin-left: 10%;
+			}
 		}
 	</style>
 
@@ -97,17 +107,8 @@
 				</center>
 			</div>
 			<div class="col-md-11 order-1 order-md-2">
-				<div id="workId" class="row">
-					<div class="card" style="width: 23rem;margin:5px">
-						<img class="card-img-top"  height="250" width="440" src="https://raw.githubusercontent.com/92ganesh/Recruit.me/master/home%20page.gif" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<a href="#" class="btn btn-primary">view on Github</a>
-							<a href="#" class="btn btn-danger" style="float: right;">Demo</a>
-						</div>
-					</div>
-					
+				<div class="row left-margin" id="workId">
+					<!-- data will be added here from json -->
 				</div>
 			</div>
 		</div>
