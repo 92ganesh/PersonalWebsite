@@ -141,17 +141,17 @@
 	  <script>
 		window.onload = function() {
 			 //reloadPage();
-			 var jsonString = '[{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
-			 				+ ',{"title" : "asdf","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three languages are supported i.e English(International), Hindi(National), Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}]';
-			addWorkFromJson(jsonString);
-			// xmlhttp = new XMLHttpRequest();
-			// xmlhttp.onreadystatechange = function() {
-			// 	if (this.readyState == 4 && this.status == 200) {
-			// 		addWorkFromJson(this.responseText);
-			// 	}
-			// };
-			// xmlhttp.open("GET", "work.json", true);
-			// xmlhttp.send();
+			//  var jsonString = '[{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+			//  				+ ',{"title" : "asdf","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three languages are supported i.e English(International), Hindi(National), Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}]';
+			// addWorkFromJson(jsonString);
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					addWorkFromJson(this.responseText);
+				}
+			};
+			xmlhttp.open("GET", "work.json", true);
+			xmlhttp.send();
 		};
 
 		function re(){
