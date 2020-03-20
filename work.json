@@ -7,7 +7,7 @@
 		"github": "https://github.com/92ganesh/PersonalWebsite"
 	},
 	{
-		"title" : "Language Recogniton",
+		"title" : "Language Recognition",
 		"detail": "Python program to recognize handwritten scripts and to which language they belong.",
 		"image" : "languageRecognition.jpg",
 		"github": "https://github.com/92ganesh/Language-Recognition",
@@ -15,7 +15,7 @@
 	},
 	{
 		"title" : "Recruit.me",
-		"detail": "Web app to improve resume screening process. Using web scraping relevant info of interviewee's online accounts like GitHub, LinkedIn, codechef, hackerrank etc. will be presented to the interviewer in intuitive manner",
+		"detail": "Web app to improve resume screening process. Using web scraping relevant info of interviewee's online accounts like GitHub, LinkedIn, codechef, hackerrank etc. will be presented to the interviewer in a intuitive manner",
 		"image" : "recruitMe.gif",
 		"github": "https://github.com/92ganesh/Recruit.me",
 		"demo"	: "https://www.youtube.com/watch?v=8xoCqm1-tL4&t=112s"
