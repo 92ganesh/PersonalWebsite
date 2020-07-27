@@ -204,9 +204,9 @@
 			<li class="nav-item">
 			  <a class="nav-link" href="home.html">Home </a>
 			</li>
-			<li class="nav-item">
+<!-- 			<li class="nav-item">
 			  <a class="nav-link" href="#">About</a>
-			</li>
+			</li> -->
 			<li class="nav-item">
 				<a class="nav-link" href="work.html">Work</a>
 			</li>
@@ -274,7 +274,8 @@
 			var displayOnLeft = true;
 			myObj = JSON.parse(jsonString);
 			var htmlStr = "";
-			for(var i=0;i<myObj.length;i++){
+			//for(var i=0;i<myObj.length;i++){
+			for(var i=myObj.length-1;i>=0;i--){
 				if(displayOnLeft){
 					displaySide = "left";
 				}else{
