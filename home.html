@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- For Social media icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<style>
 		.background{
 			background-image:url("background.jpg");
@@ -87,60 +88,50 @@
 			<li class="nav-item">
 				<a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1NswRt2hW7vI_n7VAsYd_fSD7sna4wYDY/view?usp=sharing">Resume</a>
 			</li>
+			
 		  </ul>
 		</div>
 	</nav>
 		<div class="container-fluid background ">
-			<div  id="datadiv">
-				<div class="row">
-					<div class="col" >
-						<center><img src="ganesh.jpg" class="img-fluid"  style="border-radius: 50%; margin-top:30px; "></center>
-					</div>
+			<div class="row">
+				<div class="col" >
+					<center><img src="ganesh.jpg" class="img-fluid"  style="border-radius: 50%; margin-top:30px; "></center>
 				</div>
-				<div class="row" >
-					<div class="col" style="color: white;">
-						<center><h1>Ganesh Patra</h1></center>
-						<center><h7>Software Engineer | Machine Learning | Competitive programming </h7> </center>
-						<center>
-							
-						<a id="showGmailLink" class="fa fa-google"></a>
+			</div>
+			<div class="row" >
+				<div class="col" style="color: white;">
+					<center><h1>Ganesh Patra</h1></center>
+					<center><h7>Software Engineer | Machine Learning | Competitive programming </h7> </center>
+					<center>
+						<a href="#" class="fa fa-google"></a>
 						<a href="https://www.linkedin.com/in/ganesh-patra/" target="_blank" class="fa fa-linkedin"></a>
-							<a href="https://www.youtube.com/channel/UCqWcLKvibUdE08OgHc07CVA" target="_blank" class="fa fa-youtube"></a>
-							<a href="https://www.github.com/92ganesh" target="_blank" class="fa fa-github"></a>
-						</center>
-						<div id="emailid">
-						<center><h5>92ganeshpatra@gmail.com</h5></center></div>
-					</div>
+						<a href="https://www.youtube.com/channel/UCqWcLKvibUdE08OgHc07CVA" target="_blank" class="fa fa-youtube"></a>
+						<a href="https://www.github.com/92ganesh" target="_blank" class="fa fa-github"></a>
+					</center>
 				</div>
 			</div>
 		</div>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script>
-		$(document).ready(function(){
-		  $("#datadiv").fadeIn(2000);
-		  $("#showGmailLink").click(function(){
-			$("#emailid").toggle(1000,"linear");;
-		  });
-		});
-		
+	  <script>
 		window.onload = function() {
-		   $('#datadiv').hide();
-		   $('#emailid').hide();
+		   //reloadPage();
 		};
 
 		function re(){
 			location.reload(true);
 		}
-		
+
+
 		function reloadPage(){
 			setInterval(re, 500);
 			//setInterval(console.log("check"),5000);
 		}
-	</script>
-</body>
+
+	  </script>
+	</body>
 </html>
