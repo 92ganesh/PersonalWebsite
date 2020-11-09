@@ -57,6 +57,10 @@
 		color: white;
 		}
 
+		.navbar-color{	
+			background-image: url('neon.png');
+		}
+
 	@media (max-width: 992px) {
 		.navbar-collapse {
 			position: fixed;
@@ -83,13 +87,20 @@
 		.navbar-toggler.collapsed ~ .navbar-collapse {
 			transition: left 500ms ease-in-out;
 		}
+
+		.navbar-color{
+				background-image: url('neon.png');
+			}
+		.navbar-side-menu-color{
+			background-image: url('neon.png');
+		}
 	}
 	</style>
 
     <title>Home</title>
   </head>
   <body>
-	<nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav  class="navbar navbar-expand-lg navbar-dark navbar-color">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -98,7 +109,7 @@
 			Ganesh Patra
 		</a>
 	  
-		<div  class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+		<div  class="collapse navbar-collapse navbar-side-menu-color" id="navbarSupportedContent">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
 			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
