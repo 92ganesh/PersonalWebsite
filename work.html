@@ -55,27 +55,47 @@
 			margin-left: 0px;  
 		}
 
-		@media screen and (max-width: 600px) {
-			.left-margin{
-				margin-left: 10%;
-			}
+	@media (max-width: 992px) {
+		.navbar-collapse {
+			position: fixed;
+			top: 50px;
+			left: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			width: 50%;
+			height: 100%;
+			z-index: 1;
 		}
+
+		.navbar-collapse.collapsing {
+			left: -75%;
+			transition: height 0s ease;
+		}
+
+		.navbar-collapse.show {
+			left: 0;
+			transition: left 300ms ease-in-out;
+		}
+
+		.navbar-toggler.collapsed ~ .navbar-collapse {
+			transition: left 500ms ease-in-out;
+		}
+	}
 	</style>
 
     <title>Work</title>
   </head>
   <body>
 	<nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
 		<a class="navbar-brand" href="#">
 			<img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
 			Ganesh Patra
 		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-
-		</button>
-	  
-		<div  class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div  class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item">
 			  <a class="nav-link" href="home.html">Home </a>
@@ -141,17 +161,51 @@
 	  <script>
 		window.onload = function() {
 			 //reloadPage();
-			//  var jsonString = '[{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
-			//  				+ ',{"title" : "asdf","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three languages are supported i.e English(International), Hindi(National), Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}]';
-			// addWorkFromJson(jsonString);
-			xmlhttp = new XMLHttpRequest();
-			xmlhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
-					addWorkFromJson(this.responseText);
-				}
-			};
-			xmlhttp.open("GET", "work.json", true);
-			xmlhttp.send();
+			 var jsonString = '[{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+			 				+ ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+							 + ',{"title" : "Language Recogniton","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}'
+			 				 + ',{"title" : "asdf","detail": "This project aims to recognize handwritten scripts and to which language they belong. Currently three languages are supported i.e English(International), Hindi(National), Odia(Regional) and character set of script is limited to digits only. ","image" : "languageRecognition.jpg","github": "https://github.com/92ganesh/Language-Recognition","demo"	: "https://www.youtube.com/watch?v=rtKz6uJDLzs"}]';
+			 addWorkFromJson(jsonString);
+			// xmlhttp = new XMLHttpRequest();
+			// xmlhttp.onreadystatechange = function() {
+			// 	if (this.readyState == 4 && this.status == 200) {
+			// 		addWorkFromJson(this.responseText);
+			// 	}
+			// };
+			// xmlhttp.open("GET", "work.json", true);
+			// xmlhttp.send();
 		};
 
 		function re(){
@@ -169,7 +223,7 @@
 			var htmlStr = "";
 			for(var i=0;i<project.length;i++){
 				htmlStr+= '<div class="card" style="width:23rem; margin:5px; margin-top:20px; border:2px solid gold;">'
-						+'<img class="card-img-top" src="projectImages/'+project[i].image+'" alt="Card image cap"  height="250" width="440">'
+						+'<img class="card-img-top" src="projectImages/'+project[i].image+'" alt="Card image cap"  height="250" width="440" loading="lazy">'
 						+'<div class="card-body">'
 						+'<h5 class="card-title">'+project[i].title+'</h5>'
 						+'<p class="card-text">'+project[i].detail+'</p>'

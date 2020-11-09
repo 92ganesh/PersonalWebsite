@@ -56,22 +56,49 @@
 		background: #000000;
 		color: white;
 		}
+
+	@media (max-width: 992px) {
+		.navbar-collapse {
+			position: fixed;
+			top: 50px;
+			left: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			width: 50%;
+			height: 100%;
+			z-index: 1;
+		}
+
+		.navbar-collapse.collapsing {
+			left: -75%;
+			transition: height 0s ease;
+		}
+
+		.navbar-collapse.show {
+			left: 0;
+			transition: left 300ms ease-in-out;
+		}
+
+		.navbar-toggler.collapsed ~ .navbar-collapse {
+			transition: left 500ms ease-in-out;
+		}
+	}
 	</style>
 
     <title>Home</title>
   </head>
   <body>
 	<nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
 		<a class="navbar-brand" href="#">
 			<img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
 			Ganesh Patra
 		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-
-		</button>
 	  
-		<div  class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div  class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
 			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
