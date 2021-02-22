@@ -1,0 +1,30 @@
+.background{
+    background-color: white
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.content{
+    min-height: calc(100vh - 56px);
+    display: flex;
+}
+
+.social-media{
+    width: min-content;
+    height: calc(100vh - 56px);
+    position: sticky;
+    top:56px;
+    z-index: -1;
+}
+
+.router{
+    width:100%;
+}
+
+@media screen and (max-width: 600px){
+    .small-screen{
+        height: 100%;
+    }
+}
