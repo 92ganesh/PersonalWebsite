@@ -2,6 +2,9 @@
     background-image: url('/assets/neon.png');
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
 .fa {
@@ -37,4 +40,10 @@
 .fa-github {
     background: #000000;
     color: white;
+}
+
+@media screen and (max-width: 600px){
+    .social-media-custom{
+        flex-direction:row;
+    }
 }

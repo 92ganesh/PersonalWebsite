@@ -1,5 +1,5 @@
 .background{
-    background-color: white
+    background-color: rgb(182, 174, 174)
 }
 
 .no-padding{
@@ -16,7 +16,6 @@
     height: calc(100vh - 56px);
     position: sticky;
     top:56px;
-    z-index: -1;
 }
 
 .router{
@@ -24,7 +23,22 @@
 }
 
 @media screen and (max-width: 600px){
-    .small-screen{
-        height: 100%;
+    .content{
+        /* flex-direction: column-reverse; */
+        flex-direction: column;
+    }
+
+    .social-media{
+        width: 100%;
+        height: min-content;
+    }
+
+    .social-media-outer{
+        order:2;
+    }
+
+    .router{
+        order:1;
+        flex-grow: 1;
     }
 }
