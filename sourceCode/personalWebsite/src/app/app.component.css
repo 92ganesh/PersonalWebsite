@@ -1,5 +1,8 @@
 .background{
-    background-color: rgb(182, 174, 174)
+    /* background-color: rgb(182, 174, 174); */
+    background-image: url('/assets/silver-plain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .no-padding{

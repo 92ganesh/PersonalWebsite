@@ -2,6 +2,23 @@
     justify-content: center;
 }
 
+.profile-img{
+    border-radius: 50%; 
+    margin-top:30px; 
+    margin-bottom:30px; 
+    box-shadow: 5px 4px 20px 2px #797979;
+    height: 22%;
+    width: 22%;
+}
+
+.my-name{
+    color: rgb(2,45,24);
+}
+
+.sub-title{
+    color: rgb(49, 56, 53);
+}
+
 .fa {
     padding:10px;
     font-size: 30px;

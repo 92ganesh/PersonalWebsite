@@ -1,0 +1,9 @@
+.projects-card{
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card-custom{
+    margin-bottom: 20px;
+    width: 300px;
+}

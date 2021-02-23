@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  baseUrl:"https://raw.githubusercontent.com/92ganesh/PersonalWebsite/master/"
 };
