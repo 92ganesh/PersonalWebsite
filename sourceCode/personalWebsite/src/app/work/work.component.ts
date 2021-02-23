@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WorkService } from './../services/work.service';
 import { environment } from '../../environments/environment';
 import { Project } from './../model/Project';
+
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
@@ -10,6 +11,7 @@ import { Project } from './../model/Project';
 export class WorkComponent implements OnInit {
   projectList:Project[];
   baseUrl:string;
+
   constructor(private workService:WorkService) { }
 
   ngOnInit(): void {
@@ -23,5 +25,4 @@ export class WorkComponent implements OnInit {
       }
     );
   }
-
 }

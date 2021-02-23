@@ -10,6 +10,7 @@ import { JourneyService } from '../services/journey.service';
 export class JourneyComponent implements OnInit {
   displayBlockOnLeftSide:boolean = true;
   milestonesList:Milestone[];
+
   constructor(private journeyService:JourneyService) { }
 
   ngOnInit(): void {
@@ -20,7 +21,6 @@ export class JourneyComponent implements OnInit {
           this.milestonesList[i].displaySide = (this.displayBlockOnLeftSide)?'left':'right';
           this.displayBlockOnLeftSide=!this.displayBlockOnLeftSide;
         }
-        console.log(this.milestonesList);
       },
       (error)=>{
 
