@@ -21,7 +21,6 @@ export class WorkComponent implements OnInit {
         this.projectList = response;
       },
       (error)=>{
-        console.log(error);
       }
     );
   }
