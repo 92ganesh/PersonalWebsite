@@ -1,14 +1,16 @@
-<app-navbar></app-navbar>
-<div class="content">
-    <div *ngIf="this.router.url!=='/home'" class="social-media-outer">
-
-        <!-- this is wrapped inside a div to make below div sticky
-         as outer div is flex-item which cannot have position:sticky -->
-        <div class="social-media">
-            <app-social-media-links></app-social-media-links>
+<div class="background">
+    <app-navbar></app-navbar>
+    <div class="content">
+        <div *ngIf="this.router.url!=='/home'" class="social-media-outer">
+    
+            <!-- this is wrapped inside a div to make below div sticky
+             as outer div is flex-item which cannot have position:sticky -->
+            <div class="social-media">
+                <app-social-media-links></app-social-media-links>
+            </div>
         </div>
-    </div>
-    <div class="router background">
-        <router-outlet></router-outlet>
+        <div class="router ">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>

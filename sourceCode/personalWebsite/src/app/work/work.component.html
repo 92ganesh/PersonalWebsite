@@ -9,10 +9,10 @@
             <mat-card-actions>
               <div class="row">
                 <div class="col">
-                    <button mat-button class="btn btn-primary" style="margin-right: 30px">view on Github</button>
+                    <a href="{{project.github}}" target="_blank" class="btn btn-primary" style="margin-right: 30px">view on Github</a>
                 </div>
                 <div class="col-auto">
-                    <button *ngIf="project.demo!=null" mat-button class="btn btn-danger">Demo</button>
+                    <a href="{{project.demo}}" target="_blank" *ngIf="project.demo!=null" mat-button class="btn btn-danger">Demo</a>
                 </div>
               </div>
             </mat-card-actions>

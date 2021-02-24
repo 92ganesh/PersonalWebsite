@@ -1,29 +1,55 @@
-<div class="navbar-custom">
-  <nav  class="navbar navbar-expand-lg navbar-dark navbar-color">
-      <div class="navbar-brand navbar-brand-custom" (click)="this.router.navigate(['/home'])">
-        <img src="/assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Ganesh Patra
+<div class="navbar-outer">
+  <nav  class="navbar navbar-custom navbar-color">
+      <div class="display-flex">
+        <div class="navbar-brand navbar-brand-custom hide-on-small-screen" (click)="this.router.navigate(['/home'])">
+          Ganesh Patra
+        </div>
+
+        <div class="nav-link nav-link-custom " (click)="this.router.navigate(['/home'])" [ngClass]="{'nav-link-active':this.router.url==='/home'}">
+          <span [ngStyle]="{color:(this.router.url==='/home')?'white':'black'}">Home</span>
+        </div>
+        <div class="nav-link nav-link-custom" (click)="this.router.navigate(['/work'])" [ngClass]="{'nav-link-active':this.router.url==='/work'}">
+          <span [ngStyle]="{color:(this.router.url==='/work')?'white':'black'}">Work</span>
+        </div>
+        <div class="nav-link nav-link-custom" (click)="this.router.navigate(['/journey'])" [ngClass]="{'nav-link-active':this.router.url==='/journey'}">
+          <span [ngStyle]="{color:(this.router.url==='/journey')?'white':'black'}">My Journey</span>
+        </div>
+        <div>
+          <a class="nav-link nav-link-custom" target="_blank" href="https://drive.google.com/file/d/1NswRt2hW7vI_n7VAsYd_fSD7sna4wYDY/view?usp=sharing">
+            <span style="color:black">Resume</span>
+          </a>
+        </div>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       
     
-      <div  class="collapse navbar-collapse navbar-side-menu-color" id="navbarSupportedContent">
+      <!-- <div  class="collapse navbar-collapse navbar-side-menu-color" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
-            <div class="nav-link" (click)="this.router.navigate(['/home'])" ><span class="nav-link-custom">Home</span></div>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <div class="nav-link nav-link-custom " (click)="this.router.navigate(['/home'])" [ngClass]="{'nav-link-active':this.router.url==='/home'}">
+              <span [ngStyle]="{color:(this.router.url==='/home')?'white':'black'}">Home</span>
+            </div>
           </li>
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-              <div class="nav-link" (click)="this.router.navigate(['/work'])"><span class="nav-link-custom">Work</span></div>
+              <div class="nav-link nav-link-custom" (click)="this.router.navigate(['/work'])" [ngClass]="{'nav-link-active':this.router.url==='/work'}">
+                <span [ngStyle]="{color:(this.router.url==='/work')?'white':'black'}">Work</span>
+              </div>
           </li>
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-              <div class="nav-link" (click)="this.router.navigate(['/journey'])"><span class="nav-link-custom">My Journey</span></div>
+              <div class="nav-link nav-link-custom" (click)="this.router.navigate(['/journey'])" [ngClass]="{'nav-link-active':this.router.url==='/journey'}">
+                <span [ngStyle]="{color:(this.router.url==='/journey')?'white':'black'}">My Journey</span>
+              </div>
           </li>
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1NswRt2hW7vI_n7VAsYd_fSD7sna4wYDY/view?usp=sharing"><span class="nav-link-custom">Resume</span></a>
+              <a class="nav-link nav-link-custom" target="_blank" href="https://drive.google.com/file/d/1NswRt2hW7vI_n7VAsYd_fSD7sna4wYDY/view?usp=sharing">
+                <span style="color:black">Resume</span>
+              </a>
           </li>
         </ul>
-      </div>
+      </div> -->
   </nav>
 </div>
