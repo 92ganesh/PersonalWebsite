@@ -7,10 +7,23 @@
     margin-bottom: 20px;
     width: 300px;
     box-shadow: 5px 4px 5px 2px #797979;
+    padding-top: 0px;
 }
 
 .title{
-    font-family: cursive;
-    font-size: larger;
-    margin-left:-16px
+    font-family: ui-sans-serif;
+    font-size: large;
+    margin-left: -16px;
+    margin-bottom: -7px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.btn-custom{
+
+}
+
+.details{
+    font-size: small;
+    color:grey;
 }

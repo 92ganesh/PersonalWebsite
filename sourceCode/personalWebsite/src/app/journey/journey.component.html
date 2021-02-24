@@ -2,8 +2,8 @@
     <div *ngFor="let milestone of milestonesList" class="container"
      [ngClass]="{left:milestone.displaySide==='left', right:milestone.displaySide==='right'}">
         <div class="content">
-            <h3>{{milestone.year}}</h3>
-            <p>{{milestone.detail}}l</p>
+            <p class="title">{{milestone.year}}</p>
+            <p class="details">{{milestone.detail}}</p>
         </div>
     </div>
 </div>

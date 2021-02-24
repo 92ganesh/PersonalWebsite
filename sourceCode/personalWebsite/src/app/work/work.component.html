@@ -3,13 +3,14 @@
         <div *ngFor="let project of projectList" class="card-deck">
           <mat-card class="card-custom">
             <mat-card-header style="margin:0px">
-              <mat-card-title class="title">{{project.title}}</mat-card-title>
+              <mat-card-title><div class="title">{{project.title}}</div></mat-card-title>
             </mat-card-header>
-            <img mat-card-image src="{{this.baseUrl+'projectImages/'+project.image}}" height="250px" width="300px" alt="Photo of a Shiba Inu">
-            <mat-card-actions>
-              <div class="row">
-                <div class="col">
-                    <a href="{{project.github}}" target="_blank" class="btn btn-primary" style="margin-right: 30px">view on Github</a>
+            <img mat-card-image src="{{this.baseUrl+'projectImages/'+project.image}}"
+               height="250px" width="300px" alt="Photo of a Shiba Inu" style="margin-bottom: 0px">
+            <mat-card-actions style="margin-bottom:0px">
+              <div class="row" style="justify-content:center">
+                <div class="col-auto">
+                    <a href="{{project.github}}" target="_blank" class="btn btn-custom" style="background:black; color:white;">Github</a>
                 </div>
                 <div class="col-auto">
                     <a href="{{project.demo}}" target="_blank" *ngIf="project.demo!=null" mat-button class="btn btn-danger">Demo</a>
@@ -17,7 +18,7 @@
               </div>
             </mat-card-actions>
             <mat-card-content>
-              <p>{{project.detail}}</p>
+              <p class="details">{{project.detail}}</p>
             </mat-card-content>
           </mat-card>
         </div>

@@ -7,7 +7,9 @@ import { JourneyComponent } from './journey/journey.component';
 const routes: Routes = [
   { path:'home', component:HomeComponent},
   { path:'work', component:WorkComponent},
-  { path:'journey', component:JourneyComponent}
+  { path:'journey', component:JourneyComponent},
+  { path:'', redirectTo:'home',pathMatch:'full'},
+  { path:'**', redirectTo:'home'}
 ];
 
 @NgModule({

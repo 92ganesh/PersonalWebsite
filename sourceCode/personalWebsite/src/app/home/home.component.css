@@ -1,3 +1,14 @@
+.fadein-animation {
+    animation-name: fadein-keyframes;
+    animation-duration: 3s;
+    opacity:1;
+}
+
+@keyframes fadein-keyframes {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+
 .center-content{
     display:flex;  
     justify-content: center;
