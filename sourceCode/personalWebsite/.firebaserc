@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ganesh-patra"
+  },
+  "targets": {
+    "ganesh-patra": {
+      "hosting": {
+        "personalWebsite": [
+          "ganesh-patra"
+        ]
+      }
+    }
+  }
+}

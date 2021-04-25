@@ -1,5 +1,5 @@
 export class Milestone{
-    year:number;
+    year:string;
     detail:string;
     displaySide:string;
     constructor(){
