@@ -1,35 +1,54 @@
-[
-	{
-		"year" : 2014,
-		"detail": "SSC with 92% and 2nd in school"
-	},
-	{
-		"year" : 2016,
-		"detail": "HSC with 92% and 1st in college"
-	},
-	{
-		"year" : 2017,
-		"detail": "Internship in language recognition at KJSCE"
-	},
-	{
-		"year" : 2018,
-		"detail": "Internship in Computer Vision and ML at AItoe Labs"
-	},
-	{
-		"year" : 2019,
-		"detail": "Qualified for semi-finals in TechGig Code gladiator 2019 (World’s largest coding contest)"
-	},
-	{
-		"year" : 2019,
-		"detail": "4th Rank in Codewars 2019 (inter-departmental coding challenge of KJSCE)"
-	},
-	{
-		"year" : 2019,
-		"detail": "Internship in Android development at KJSCE"
-	},
-	{
-		"year" : 2019,
-		"detail": "Received badge of 5 star rated coder on Codechef (2019)"
-	}
-
+[   
+    {
+        "year" : "April, 2021",
+        "detail": "Joined a new project in TCS as backend developer"
+    },
+    {   
+        "year" : "Jan, 2021",
+        "detail":"Survived 2020!"
+    },
+    {
+        "year" : "Oct, 2020",
+        "detail" : "Graduated from KJSCE as a proud IT engineering"
+    },
+    {
+        "year" : "Aug, 2020",
+        "detail": "Joined TCS Digital as software developer. Worked as Full stack developer in an internal project of TCS."
+    },
+    {
+        "year" : "June, 2019",
+        "detail": "Received badge of 5 star rated coder on Codechef (2019)"
+    },
+    {
+        "year" : "Feb, 2019",
+        "detail": "Internship in Android development at KJSCE"
+    },
+    {
+        "year" : "2019",
+        "detail": "4th Rank in Codewars 2019 (inter-departmental coding challenge of KJSCE)"
+    },
+    {
+        "year" : "2019",
+        "detail": "Qualified for semi-finals in TechGig Code gladiator 2019 (World’s largest coding contest)"
+    },
+    {
+        "year" : "2018",
+        "detail": "Internship in Computer Vision and ML at AItoe Labs"
+    },
+    {
+        "year" : "2017",
+        "detail": "Internship in language recognition at KJSCE"
+    },
+    {
+        "year" : "2016",
+        "detail": "HSC/12th with 91.69% and 1st in college"
+    },
+    {
+        "year" : "2014",
+        "detail": "SSC/10th with 92.04% and 2nd in school"
+    },
+    {
+        "year" : "1997-2014",
+        "detail": "Born and brought up by probably one of the best parents. Self taught cycling and swimming. Saved injured stray pigeons, a sparrow and a kitten(not at the same time). Watched pokemon. Wrestled and defeated my younger brother several times. Basically enjoyed life to fullest before 10th std board happened."
+    }
 ]
