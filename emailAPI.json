@@ -1,3 +1,3 @@
 {
-  "emailAPIendpoint" : "kkhttps://99vejrfyq4.execute-api.ap-south-1.amazonaws.com/default/email"
+  "emailAPIendpoint" : "https://99vejrfyq4.execute-api.ap-south-1.amazonaws.com/default/email"
 }
