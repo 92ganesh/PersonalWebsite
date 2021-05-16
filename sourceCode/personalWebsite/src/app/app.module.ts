@@ -10,6 +10,10 @@ import { WorkComponent } from './work/work.component';
 import { SocialMediaLinksComponent } from './social-media-links/social-media-links.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { CommentDialogComponent } from './comment-dialog/comment-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -18,14 +22,18 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent,
     JourneyComponent,
     WorkComponent,
-    SocialMediaLinksComponent
+    SocialMediaLinksComponent,
+    CommentDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatDialogModule,
+    MatCardModule,
+    FontAwesomeModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

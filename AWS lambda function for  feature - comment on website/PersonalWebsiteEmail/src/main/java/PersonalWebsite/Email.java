@@ -42,9 +42,10 @@ public class Email implements RequestHandler<APIGatewayProxyRequestEvent, APIGat
         response.setIsBase64Encoded(false);
         response.setStatusCode(200);
         HashMap<String, String> headers = new HashMap<String, String>();
-        headers.put("Content-Type", "text/html");
+        headers.put("Content-Type", "application/json");
         response.setHeaders(headers);
-        response.setBody((emailSent)?"message delivered successfully":"message could not be sent! Check if email address is valid and exists");
+        response.setBody((emailSent)?"{\"result\":\"message delivered successfully\"}":
+                "{\"result\":\"message could not be sent! Check if email address is valid and exists\"}");
         return response;
     }
 

@@ -1,0 +1,23 @@
+.form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.form-full-width {
+    width: 100%;
+}
+
+.visibility-hidden{
+    visibility: hidden;
+}
+
+.submit{
+    border: 2px #848184 solid;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 6px 40px;
+    background-color: #121214;
+    color: #fff6f6;
+    font-family: serif;
+}

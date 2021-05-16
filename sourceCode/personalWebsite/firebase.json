@@ -1,6 +1,6 @@
 {
   "hosting": [
-    {
+    { "target": "personalWebsite",
       "public": "dist/personalWebsite",
       "ignore": [
         "firebase.json",

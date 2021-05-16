@@ -72,6 +72,17 @@
     color: white;
 }
 
+.comment-box{
+    background-color: white;
+    padding: 8px 35px 8px 8px;
+    margin-top: 10px;
+    align-items: unset;
+    border-radius: 80px;
+    border: 1px solid black;
+    box-shadow: 2px 4px 11px 2px #797979;
+    cursor: pointer;
+}
+
 /* arrange profile and details vertically for mobile devices */
 @media screen and (max-width: 600px) {
     .small-screen{
