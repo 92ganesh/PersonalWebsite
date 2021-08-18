@@ -21,9 +21,13 @@ import javax.mail.internet.MimeMessage;
  *   request should be a post request with body as { email:"valid email id", body:"details to be sent"}
  * */
 public class Email implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent>{
-    private final String senderEmail = "";
-    private final String senderPassword = "";
-    private final String recipientEmail = "";
+    private static final String senderEmail = "";
+    private static final String senderPassword = "";
+    private static final String recipientEmail = "";
+
+    public static void main(String[] args) {
+        send(senderEmail, senderPassword, recipientEmail,"sub text","body text");
+    }
 
     @Override
     public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent event, Context context)
@@ -37,7 +41,10 @@ public class Email implements RequestHandler<APIGatewayProxyRequestEvent, APIGat
         LambdaLogger logger = context.getLogger();
 
         boolean emailSent = send(senderEmail, senderPassword, recipientEmail,	comment.getName()+" commented on website", comment.toString());
-
+        if(!emailSent){
+            System.out.println("*** Could not send email ***");
+            System.out.println("*** Email content: " + comment.toString() + " ***");
+        }
         APIGatewayProxyResponseEvent response = new APIGatewayProxyResponseEvent();
         response.setIsBase64Encoded(false);
         response.setStatusCode(200);
@@ -49,28 +56,38 @@ public class Email implements RequestHandler<APIGatewayProxyRequestEvent, APIGat
         return response;
     }
 
-    /** details- sends mail using gmail SMTP server and javaMail API
-     * params:-
-     * from 		- sender's email
-     * password	- sender's password
-     * to		- receiver's email
-     * sub 		- subject of the email
-     * msg		- body of the email
+    /**
+     * sends mail using gmail SMTP server and javaMail API
+     * @param from      sender's email
+     * @param password  sender's password
+     * @param to        email list of all receivers
+     * @param sub       subject of the email
+     * @param msg       body of the email
+     * @return true if email is sent succesfully otherwise false
      */
     public static boolean send(final String from,final String password,String[] to,String sub,String msg){
         boolean emailSent = false;
 
         //Get properties object
         Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.gmail.com");
 
+        props.put("mail.smtp.auth", "true");
         // Here 465 states that SSL encryption will be used. But i guess its not working in our case as security detail of received mails shows TLS.
         // May be we need to provide details of SSL. As of now its not a major issue
+        /* For Gmail use following properties
+        props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.socketFactory.port", "465");
         props.put("mail.smtp.socketFactory.class",
                 "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.port", "465");
+        */
+
+        // use following properties for outlook
+        props.put("mail.smtp.host", "smtp-mail.outlook.com");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.port", "587");
+
         //get Session
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
@@ -79,7 +96,6 @@ public class Email implements RequestHandler<APIGatewayProxyRequestEvent, APIGat
                     }
                 }
         );
-
 
         //compose and send message
         try {
@@ -138,13 +154,14 @@ public class Email implements RequestHandler<APIGatewayProxyRequestEvent, APIGat
         return emailSent;
     }
 
-    /** details- overloaded function which sends mail to single recipient using gmail SMTP server and javaMail API
-     * params:-
-     * from 		- sender's email
-     * password	- sender's password
-     * to		- receiver's email
-     * sub 		- subject of the email
-     * msg		- body of the email
+    /**
+     * overloaded function which sends mail to single recipient using gmail SMTP server and javaMail API
+     * @param from      sender's email
+     * @param password  sender's password
+     * @param to        receiver's email
+     * @param sub       subject of the email
+     * @param msg       body of the email
+     * @return  true if email is sent succesfully otherwise false
      */
     public static boolean send(String from,String password,String to,String sub,String msg){
         String[] recipient = {to};
@@ -152,6 +169,9 @@ public class Email implements RequestHandler<APIGatewayProxyRequestEvent, APIGat
     }
 }
 
+/**
+ * model class to map json string to object
+ */
 class CommentDetails{
     private String name;
     private String contact;
@@ -183,6 +203,7 @@ class CommentDetails{
 
     @Override
     public String toString(){
-        return name+" ("+contact+") says:-\n"+message;
+        contact = (contact.length()==0) ? "" :  " ("+contact+")";
+        return name+contact+" says:-\n"+message;
     }
 }

@@ -10,7 +10,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="idea.launcher.port" value="56066"/>
+    <property name="idea.launcher.port" value="54059"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
     <property name="user.country" value="IN"/>
@@ -46,7 +46,7 @@
     <property name="idea.version2019.2.2" value="true"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMainV2 org.codehaus.classworlds.Launcher -Didea.version2019.2.2 package"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMainV2 org.codehaus.classworlds.Launcher -Didea.version2019.2.2 install"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-16.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
