@@ -1,0 +1,4 @@
+Google deactivates smtp if not used for a while 
+to activate 
+- go here https://accounts.google.com/DisplayUnlockCaptcha
+- turn on https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4OiWpJfyqn_zfk74aKKdZWIOXou8axLgpfGylwIP-n53ec5rBfR5oYx6ZQ8Cv-uivgSEG4RRNsISeFOpAiMD6cpirUqWg
