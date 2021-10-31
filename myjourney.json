@@ -1,11 +1,15 @@
 [   
     {
+        "year" : "Aug, 2021",
+        "detail": "Rewarded with 5/5 rating during anniversary appraisal at TCS"
+    },
+    {
         "year" : "April, 2021",
-        "detail": "Joined a new project in TCS as backend developer"
+        "detail": "Joined a new project in TCS as Java developer"
     },
     {   
-        "year" : "Jan, 2021",
-        "detail":"Survived 2020!"
+        "year" : "Dec, 2020",
+        "detail":"Received appreciation by Project architect for designing UI layout for Homepage of the our project in TCS"
     },
     {
         "year" : "Oct, 2020",
