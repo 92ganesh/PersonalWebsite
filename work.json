@@ -40,4 +40,11 @@
 		"github": "https://github.com/92ganesh/LoanRiskPredictor",
 		"demo"	: "https://92ganesh.github.io/LoanRiskPredictor/"
 	}
+    {
+		"title" : "Talk to Strangers",
+		"detail": "Chat with any WhatApp number without saving their contact. The website is live and works in devices which has whatsapp installed.",
+		"image" : "talkToStrangers.jpg",
+		"github": "https://github.com/92ganesh/Talk-to-Strangers",
+		"demo"	: "https://92ganesh.github.io/Talk-to-Strangers/"
+	}
 ]
